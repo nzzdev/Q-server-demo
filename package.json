@@ -1,0 +1,28 @@
+{
+  "name": "@nzz/q-server-nzz",
+  "version": "2.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "contributors": [
+    {
+      "name": "Beni Buess",
+      "email": "beni.buess@nzz.ch"
+    },
+    {
+      "name": "Sharon Funke",
+      "email": "sharon.funke@nzz.ch"
+    }
+  ],
+  "license": "",
+  "dependencies": {
+    "@nzz/q-server": "github:nzzdev/Q-server#v2.0.0",
+    "confidence": "3.0.2"
+  },
+  "devDependencies": {
+    "forever": "^0.15.3",
+    "mocha": "^3.2.0"
+  }
+}
