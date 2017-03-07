@@ -1,7 +1,7 @@
 {
   "name": "@nzz/q-server-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Q server for demo purposes",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0"
