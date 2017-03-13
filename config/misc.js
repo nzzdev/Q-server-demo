@@ -7,7 +7,7 @@ const misc = {
     production: 'http://q-server-demo.st-cdn.nzz.ch',
   },
   db: {
-    host: 'https://857dca34-be07-4fcd-9252-520795c6de0e-bluemix.cloudant.com',
+    host: 'https://d23f3571-f77d-410e-b0a4-b99a60fb1415-bluemix.cloudant.com',
     database: {
       $filter: 'env',
       local: 'q-items-local',
@@ -24,7 +24,7 @@ const misc = {
   },
   authStrategy: {
     couchdb_cookie: {
-      couchdbHost: 'https://857dca34-be07-4fcd-9252-520795c6de0e-bluemix.cloudant.com',
+      couchdbHost: 'https://d23f3571-f77d-410e-b0a4-b99a60fb1415-bluemix.cloudant.com',
       state: {
         $filter: 'env',
         local: {

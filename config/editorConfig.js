@@ -1,6 +1,16 @@
 const Confidence = require('confidence');
 
 const editorConfig = {
+  languages: [
+    {
+      key: 'de',
+      label: 'de'
+    },
+    {
+      key: 'en',
+      label: 'en'
+    }
+  ],
   departments: [
     "Storytelling"
   ],
