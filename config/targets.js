@@ -2,15 +2,28 @@ const Confidence = require('confidence');
 
 const targets = [
   {
-    key: 'demo',
-    label: 'Demo',
+    key: 'demo1',
+    label: 'Demo 1',
     preview: {
       stylesheets: [
         /*{
           url: 'url to stylesheet specific for target'
         }*/
       ]
-    }
+    },
+    browserLoaderUrl: 'https://q.nzz.ch/Q-demo-loader/loader1.js'
+  },
+  {
+    key: 'demo2',
+    label: 'Demo 2',
+    preview: {
+      stylesheets: [
+        /*{
+          url: 'url to stylesheet specific for target'
+        }*/
+      ]
+    },
+    browserLoaderUrl: 'https://q.nzz.ch/Q-demo-loader/loader2.js'
   }
 ]
 

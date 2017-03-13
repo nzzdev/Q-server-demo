@@ -21,12 +21,6 @@ const editorConfig = {
   itemList: {
     itemsPerLoad: 18
   },
-  browserLoaderUrl: {
-    $filter: 'env',
-    local: 'http://localhost:8080',
-    staging: 'https://q.nzz.ch/Q-loader-staging/v1/loader.js',
-    production: 'https://q.nzz.ch/Q-loader/v1/loader.js'
-  },
   help: {
     intro: 'Some introductory notes',
     faq: [
