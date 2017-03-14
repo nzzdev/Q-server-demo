@@ -22,15 +22,15 @@ const editorConfig = {
     itemsPerLoad: 18
   },
   help: {
-    intro: 'Some introductory notes',
+    intro: 'This help text is part of config/editorConfig in Q server demo. Just change it according to your needs. An introductory text can be definded as well as some detailed information in FAQ style.',
     faq: [
       {
-        question: 'Wer oder was ist Q?',
-        answer: 'Mit Q könnt ihr schnell und einfach selber Karten, Diagramme und andere grafische Elemente erstellen und in Artikel einbinden.'
+        question: 'What is Q?',
+        answer: 'Q is a toolbox that allows editors and reporters to create simple graphics and interactive elements for their articles or other forms of online content.'
       },
       {
-        question: 'Was kann Q?',
-        answer: 'Auf der Übersichtsseite seht ihr alle Tools, die aktuell zur Verfügung stehen. Neue Tools werden laufend hinzugefügt.'
+        question: 'What can I do with Q?',
+        answer: 'All available tools for this demo instance are shown on the index page.'
       }
     ]
   },

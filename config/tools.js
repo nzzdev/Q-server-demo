@@ -78,11 +78,151 @@ const tools = {
           ]
         }
       }
+    },
+    election_votes: {
+      baseUrl: 'http://localhost:3000',
+      editor: election_votes_editor_config,
+      endpoint: {
+        $filter: 'target',
+        $default: false,
+        demo1: {
+          path: '/rendering-info/html-static',
+          stylesheets: [
+            {
+              url: 'https://service.sophie.nzz.ch/bundle/sophie-q@^1,sophie-font@^1,sophie-color@^1.css',
+              type: 'critical'
+            },
+            {
+              content: '.q-item { color: #f5f5f5; background-color: #f5f5f5; }'
+            }
+          ]
+        },
+        demo2: {
+          path: '/rendering-info/html-static',
+          stylesheets: [
+            {
+              url: 'https://service.sophie.nzz.ch/bundle/sophie-color@^1.css',
+              type: 'critical'
+            },
+            {
+              content: '.q-item { color: #f5f5f5; background-color: #f5f5f5; }'
+            },
+            {
+              content: demo2Styles
+            }
+          ]
+        }
+      }
+    },
+    election_seats: {
+      baseUrl: 'http://localhost:3000',
+      editor: election_seats_editor_config,
+      endpoint: {
+        $filter: 'target',
+        $default: false,
+        demo1: {
+          path: '/rendering-info/html-static',
+          stylesheets: [
+            {
+              url: 'https://service.sophie.nzz.ch/bundle/sophie-q@^1,sophie-font@^1,sophie-color@^1.css',
+              type: 'critical'
+            },
+            {
+              content: '.q-item { color: #f5f5f5; background-color: #f5f5f5; }'
+            }
+          ]
+        },
+        demo2: {
+          path: '/rendering-info/html-static',
+          stylesheets: [
+            {
+              url: 'https://service.sophie.nzz.ch/bundle/sophie-color@^1.css',
+              type: 'critical'
+            },
+            {
+              content: '.q-item { color: #f5f5f5; background-color: #f5f5f5; }'
+            },
+            {
+              content: demo2Styles
+            }
+          ]
+        }
+      }
     }
   },
   production: {
     election_executive: {
       baseUrl: 'http://q-election-executive:3000',
+      editor: election_executive_editor_config,
+      endpoint: {
+        $filter: 'target',
+        $default: false,
+        demo1: {
+          path: '/rendering-info/html-static',
+          stylesheets: [
+            {
+              url: 'https://service.sophie.nzz.ch/bundle/sophie-q@^1,sophie-font@^1,sophie-color@^1.css',
+              type: 'critical'
+            },
+            {
+              content: '.q-item { color: #f5f5f5; background-color: #f5f5f5; }'
+            }
+          ]
+        },
+        demo2: {
+          path: '/rendering-info/html-static',
+          stylesheets: [
+            {
+              url: 'https://service.sophie.nzz.ch/bundle/sophie-color@^1.css',
+              type: 'critical'
+            },
+            {
+              content: '.q-item { color: #f5f5f5; background-color: #f5f5f5; }'
+            },
+            {
+              content: demo2Styles
+            }
+          ]
+        }
+      }
+    },
+    election_votes: {
+      baseUrl: 'http://q-election-votes:3000',
+      editor: election_votes_editor_config,
+      endpoint: {
+        $filter: 'target',
+        $default: false,
+        demo1: {
+          path: '/rendering-info/html-static',
+          stylesheets: [
+            {
+              url: 'https://service.sophie.nzz.ch/bundle/sophie-q@^1,sophie-font@^1,sophie-color@^1.css',
+              type: 'critical'
+            },
+            {
+              content: '.q-item { color: #f5f5f5; background-color: #f5f5f5; }'
+            }
+          ]
+        },
+        demo2: {
+          path: '/rendering-info/html-static',
+          stylesheets: [
+            {
+              url: 'https://service.sophie.nzz.ch/bundle/sophie-color@^1.css',
+              type: 'critical'
+            },
+            {
+              content: '.q-item { color: #f5f5f5; background-color: #f5f5f5; }'
+            },
+            {
+              content: demo2Styles
+            }
+          ]
+        }
+      }
+    },
+    election_seats: {
+      baseUrl: 'http://q-election-seats:3000',
       editor: election_executive_editor_config,
       endpoint: {
         $filter: 'target',
