@@ -22,7 +22,7 @@ const editorConfig = {
     itemsPerLoad: 18
   },
   help: {
-    intro: 'This help text is part of config/editorConfig in Q server demo. Just change it according to your needs. An introductory text can be definded as well as some detailed information in FAQ style.',
+    intro: 'This help text is part of config/editorConfig in Q server demo. Just change it according to your needs. An introductory text can be defined as well as some detailed information in FAQ style.',
     faq: [
       {
         question: 'What is Q?',
