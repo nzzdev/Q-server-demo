@@ -220,7 +220,7 @@ const tools = {
     },
     election_seats: {
       baseUrl: 'http://q-election-seats:3000',
-      editor: election_executive_editor_config,
+      editor: election_seats_editor_config,
       endpoint: {
         $filter: 'target',
         $default: false,
