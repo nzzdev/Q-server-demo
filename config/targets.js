@@ -11,7 +11,7 @@ const targets = [
         }*/
       ]
     },
-    browserLoaderUrl: 'https://q.nzz.ch/Q-demo-loader/loader1.js'
+    browserLoaderUrl: 'https://q.nzz.ch/Q-demo-loader/loader1.js' // used to generate embed code to graphic
   },
   {
     key: 'demo2',
@@ -23,7 +23,7 @@ const targets = [
         }*/
       ]
     },
-    browserLoaderUrl: 'https://q.nzz.ch/Q-demo-loader/loader2.js'
+    browserLoaderUrl: 'https://q.nzz.ch/Q-demo-loader/loader2.js' // used to generate embed code to graphic
   }
 ]
 
