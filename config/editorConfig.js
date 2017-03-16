@@ -12,6 +12,8 @@ const editorConfig = {
     }
   ],
   departments: [ // every item is assigned to one department. These are used for the filtering on item overview.
+    "International",
+    "Economics",
     "Storytelling"
   ],
   lowNewItems: {   // if there are not enough graphics, M will appear instead of Q. This is used to configure 'not enough'.
