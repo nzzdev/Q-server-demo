@@ -1,7 +1,7 @@
 {
-  "name": "@nzz/q-server-nzz",
-  "version": "2.0.1",
-  "description": "",
+  "name": "@nzz/q-server-demo",
+  "version": "1.0.0",
+  "description": "Q server for demo purposes",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0"
@@ -19,7 +19,8 @@
   "license": "",
   "dependencies": {
     "@nzz/q-server": "github:nzzdev/Q-server#v2.0.0",
-    "confidence": "3.0.2"
+    "confidence": "3.0.2",
+    "hapi-auth-couchdb-cookie": "^3.1.0"
   },
   "devDependencies": {
     "forever": "^0.15.3",
