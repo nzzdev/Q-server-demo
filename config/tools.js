@@ -19,7 +19,6 @@ const election_seats_editor_config = {
 
 // additional styles for specific targets can be configured here 
 // they will be merged with stylesheets of rendering info
-// naming: add target key in front of "Styles"
 const demo2Styles = `
   .s-font-note {
     color: black;
