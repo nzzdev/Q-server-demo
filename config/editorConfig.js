@@ -17,7 +17,7 @@ const editorConfig = {
     "Storytelling"
   ],
   lowNewItems: {   // if there are not enough graphics, M will appear instead of Q. This is used to configure 'not enough'.
-    threshold: 21, // less than that many new items..
+    threshold: 1, // less than that many new items..
     days: 7        // in the last days are considered 'not enough'
   },
   itemList: {
