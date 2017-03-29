@@ -1,6 +1,6 @@
 {
   "name": "@nzz/q-server-demo",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Q server for demo purposes",
   "main": "index.js",
   "scripts": {
