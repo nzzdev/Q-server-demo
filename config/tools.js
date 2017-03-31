@@ -75,10 +75,10 @@ const tools = {
         $filter: 'target',
         $default: false,
         demo1: {
-          path: '/rendering-info/html-static', // endpoint path to get rendering info for this specific target
+          path: '/rendering-info/html-js', // endpoint path to get rendering info for this specific target
           stylesheets: [ // target specific stylesheets to load
             {
-              url: 'https://service.sophie.nzz.ch/bundle/sophie-q@^1,sophie-font@^1,sophie-color@^1.css' 
+              url: 'https://service.sophie.nzz.ch/bundle/sophie-q@^1,sophie-color@^1.css',
             },
             {
               content: '.q-item { color: #f5f5f5; background-color: #f5f5f5; }'
@@ -86,7 +86,7 @@ const tools = {
           ]
         },
         demo2: {
-          path: '/rendering-info/html-static',
+          path: '/rendering-info/html-js',
           stylesheets: [
             {
               url: 'https://service.sophie.nzz.ch/bundle/sophie-color@^1.css'
@@ -209,10 +209,10 @@ const tools = {
         $filter: 'target',
         $default: false,
         demo1: {
-          path: '/rendering-info/html-static', // endpoint path to get rendering info for this specific target
+          path: '/rendering-info/html-js', // endpoint path to get rendering info for this specific target
           stylesheets: [ // target specific stylesheets to load
             {
-              url: 'https://service.sophie.nzz.ch/bundle/sophie-q@^1,sophie-font@^1,sophie-color@^1.css' 
+              url: 'https://service.sophie.nzz.ch/bundle/sophie-q@^1,sophie-color@^1.css',
             },
             {
               content: '.q-item { color: #f5f5f5; background-color: #f5f5f5; }'
@@ -220,7 +220,7 @@ const tools = {
           ]
         },
         demo2: {
-          path: '/rendering-info/html-static',
+          path: '/rendering-info/html-js',
           stylesheets: [
             {
               url: 'https://service.sophie.nzz.ch/bundle/sophie-color@^1.css'
