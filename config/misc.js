@@ -4,7 +4,7 @@ const misc = {
   qServerBaseUrl: {
     $filter: 'env',
     local: 'http://localhost:3001',
-    production: 'http://q-server-demo.st-cdn.nzz.ch',
+    production: 'https://q-server-demo.st.nzz.ch',
   },
   db: {
     host: 'https://d23f3571-f77d-410e-b0a4-b99a60fb1415-bluemix.cloudant.com',
