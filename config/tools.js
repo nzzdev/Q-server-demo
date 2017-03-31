@@ -203,7 +203,7 @@ const tools = {
   },
   production: {
     map: {
-      baseUrl: 'http://localhost:3000',
+      baseUrl: 'http://q-map:3000',
       editor: map_editor_config,
       endpoint: {
         $filter: 'target',
