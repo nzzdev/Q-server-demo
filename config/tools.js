@@ -2,6 +2,15 @@ const confidence = require('confidence');
 
 // editor specific tool config 
 // label and icon are used for item overview page
+
+const map_editor_config = {
+  label_locales: {
+    de: 'Karte',
+    en: 'map',
+  },
+  icon: '<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd"><path d="M16 12l-2-1-14 9 16 12 16-11-12-7v6.002A1.994 1.994 0 0 1 18 22c-1.105 0-2-.887-2-2v-8z"/><ellipse cx="18" cy="4" rx="3" ry="3"/><path d="M19 8v12.164c0 .556-.444 1.007-1 1.007-.552 0-1-.45-1-1.007V8a2.995 2.995 0 0 0 2 0z"/></g></svg>'
+}
+
 const election_executive_editor_config = {
   label_locales: {
     de: 'Exekutivwahlen',
@@ -59,6 +68,39 @@ const demo2Styles = `
 const tools = {
   $filter: 'env',
   local: {
+    map: {
+      baseUrl: 'http://localhost:3000',
+      editor: map_editor_config,
+      endpoint: {
+        $filter: 'target',
+        $default: false,
+        demo1: {
+          path: '/rendering-info/html-static', // endpoint path to get rendering info for this specific target
+          stylesheets: [ // target specific stylesheets to load
+            {
+              url: 'https://service.sophie.nzz.ch/bundle/sophie-q@^1,sophie-font@^1,sophie-color@^1.css' 
+            },
+            {
+              content: '.q-item { color: #f5f5f5; background-color: #f5f5f5; }'
+            }
+          ]
+        },
+        demo2: {
+          path: '/rendering-info/html-static',
+          stylesheets: [
+            {
+              url: 'https://service.sophie.nzz.ch/bundle/sophie-color@^1.css'
+            },
+            {
+              content: '.q-item { color: #f5f5f5; background-color: #f5f5f5; }'
+            },
+            {
+              content: demo2Styles
+            }
+          ]
+        }
+      }
+    },
     election_executive: {
       baseUrl: 'http://localhost:3000', // base url to access the tool
       editor: election_executive_editor_config, 
@@ -160,6 +202,39 @@ const tools = {
     }
   },
   production: {
+    map: {
+      baseUrl: 'http://localhost:3000',
+      editor: map_editor_config,
+      endpoint: {
+        $filter: 'target',
+        $default: false,
+        demo1: {
+          path: '/rendering-info/html-static', // endpoint path to get rendering info for this specific target
+          stylesheets: [ // target specific stylesheets to load
+            {
+              url: 'https://service.sophie.nzz.ch/bundle/sophie-q@^1,sophie-font@^1,sophie-color@^1.css' 
+            },
+            {
+              content: '.q-item { color: #f5f5f5; background-color: #f5f5f5; }'
+            }
+          ]
+        },
+        demo2: {
+          path: '/rendering-info/html-static',
+          stylesheets: [
+            {
+              url: 'https://service.sophie.nzz.ch/bundle/sophie-color@^1.css'
+            },
+            {
+              content: '.q-item { color: #f5f5f5; background-color: #f5f5f5; }'
+            },
+            {
+              content: demo2Styles
+            }
+          ]
+        }
+      }
+    },
     election_executive: {
       baseUrl: 'http://q-election-executive:3000',
       editor: election_executive_editor_config,
