@@ -6,13 +6,20 @@ const misc = {
     local: 'http://localhost:3001',
     production: 'https://q-server-demo.st.nzz.ch',
   },
-  db: {
-    host: 'https://d23f3571-f77d-410e-b0a4-b99a60fb1415-bluemix.cloudant.com',
-    database: {
-      $filter: 'env',
-      local: 'q-items-local',
-      production: 'q-items',
+  toolBaseUrl: {
+    $filter: 'env',
+    local: {
+      protocol: 'http',
+      host: 'localhost:3001'
     },
+    production: {
+      protocol: 'https',
+      host: 'q-server-demo.st-cdn.nzz.ch'
+    }
+  },
+  db: {
+    host: process.env.COUCH_HOST,
+    database: process.env.COUCH_DB,
     user: process.env.COUCH_USER,
     pass: process.env.COUCH_PASS 
   },
@@ -24,7 +31,7 @@ const misc = {
   },
   authStrategy: {
     couchdb_cookie: {
-      couchdbHost: 'https://d23f3571-f77d-410e-b0a4-b99a60fb1415-bluemix.cloudant.com',
+      couchdbHost: process.env.COUCH_HOST,
       state: {
         $filter: 'env',
         local: {
