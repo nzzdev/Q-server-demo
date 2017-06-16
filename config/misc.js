@@ -14,7 +14,7 @@ const misc = {
     },
     production: {
       protocol: 'https',
-      host: 'q-server-demo.st-cdn.nzz.ch'
+      host: 'q-server-demo.st.nzz.ch'
     }
   },
   db: {
